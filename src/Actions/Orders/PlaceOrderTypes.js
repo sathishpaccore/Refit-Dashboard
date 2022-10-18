@@ -1,0 +1,3 @@
+export const OrderTypes = {
+  RETRIEVE_CLIENT_DETAILS: "RETRIEVE_CLIENT_DETAILS",
+};

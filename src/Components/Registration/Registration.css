@@ -1,0 +1,454 @@
+.registrationContainer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.leftControlGroup {
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 500px !important;
+    margin-left: 5px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+.rightControlGroup {
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 500px !important;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.noPadding {
+    padding: 0px !important;
+}
+
+.inputControl {
+    text-align: left;
+    /* max-width: 400px !important; */
+}
+.regcli .btn-primary {
+   
+        color: #fff !important;
+        background-color: #021c38 !important;
+        border-color: #021c38 !important;
+  
+}
+.sideheader {
+    margin-bottom: 2.5rem !important;
+    /* margin-bottom: 3rem !important; */
+    /* margin-top: 0.5rem; */
+}
+.configtit {
+    font-weight: 600;
+    /* margin-bottom: 12px;
+    margin-top: 3rem; */
+}
+.registrationContainer hr {
+    margin-top: .25rem !important;
+    margin-bottom: .25rem !important;
+}
+.reg .card {
+    border-radius: 20px !important;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 5%);
+    border: 1px solid white !important;
+}
+.admreg.card {
+    border-radius: 0px !important;
+}
+.admform .input-group-text {
+    background-color: #ff7700 !important;
+    color: white !important;
+    width: 100px;
+    align-items: center;
+}
+.admform2 .input-group-text {
+    background-color: #ff7700 !important;
+    color: white !important;
+    width: 210px;
+    align-items: center;
+}
+.admform3 .input-group-text {
+    background-color: #ff7700 !important;
+    color: white !important;
+    width: 150px;
+    align-items: center;
+}
+.admreg.card {
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 1%);
+    border: 0px !important;
+}
+.flex-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.btn-previos {
+    color: black;
+    background-color: #f6f6f6;
+    border-color: #f6f6f6;
+}
+.btn-orange {
+    color: #fff;
+    background-color: #ff7700;
+    border-color: #ff7700;
+}
+.flex-child {
+    /* flex: 1; */
+    
+   /* width: 25%; */
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+.stepper-wrapper {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: auto;
+    padding: 20px;
+  }
+  .stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+  }
+  .stepper-item:first-child::before {
+    content: none;
+  }
+  
+  .stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 150%;
+    top: 20px;
+    left: -50%;
+    z-index: 2;
+  }
+  .stepper-item:last-child::after {
+    content: none;
+  }
+  .stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+  }
+  
+  .stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-bottom: 6px;
+  }
+  
+  .stepper-item.active {
+    font-weight: bold;
+  }
+  
+  .stepper-item.completed .step-counter {
+    background-color: #4bb543;
+  }
+  
+  .stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #4bb543;
+    width: 150%;
+    top: 20px;
+    left: 50%;
+    z-index: 3;
+  }
+  
+  .stepper-item.notcompleted::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #cccccc;
+    width: 150%;
+    top: 20px;
+    left: 50%;
+    z-index: 3;
+  }
+  /* .stepper-item.notcompleted:last-child::after {
+   
+    content: none;
+    
+  } */
+ .newreq .stepper-item.notcompleted::after {
+    width: 102%;
+ }
+ .newreq .stepper-item.completed::after {
+  
+    width: 102%;
+   
+  }
+  .newreq .stepper-item.pending::after {
+    /* background-color: yellow; */
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #cccccc;
+    width: 102%;
+    top: 20px;
+    left: 50%;
+    z-index: 3;
+  }
+  .stepper-item.pending .step-counter {
+    background-color: yellow;
+  }
+  .stepper-item.pending::after {
+    /* background-color: yellow; */
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #cccccc;
+    width: 150%;
+    top: 20px;
+    left: 50%;
+    z-index: 3;
+  }
+  .stepper-item.lchild .step-counter {
+    background-color: yellow;
+  }
+  /* .stepper-item.pending:last-child::after {
+    content: none;
+  } */
+  .react-switch-bg > div {
+    width: 20px !important;
+    left:6px !important;
+  }
+  html {
+    background-color: #f5f5fb;
+  }
+@media (min-width: 1400px) {
+    .registrationContainer {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .leftControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 500px !important;
+        margin-left: 5px;
+        margin-top: 14px;
+        margin-bottom: 10px;
+    }
+    .rightControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 500px !important;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .noPadding {
+        padding: 0px !important;
+    }
+    .inputControl {
+        text-align: left;
+        /* max-width: 400px !important; */
+    }
+}
+
+@media (min-width: 1200px) and (max-width:1400px) {
+    .registrationContainer {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: 14px !important;
+    }
+    .registrationContainer span {
+        font-size: 14px !important;
+    }
+    .registrationContainer input {
+        font-size: 14px !important;
+    }
+    .input-group-text {
+        font-size: 14px !important;
+    }
+    .leftControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 400px !important;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .rightControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 400px !important;
+        /* margin-left: 5px; */
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .noPadding {
+        padding: 0px !important;
+    }
+    .inputControl {
+        text-align: left;
+        font-size: 14px !important;
+        /* max-width: 400px !important; */
+    }
+}
+
+@media (min-width: 720px) and (max-width:1199px) {
+    .registrationContainer {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: 12px !important;
+    }
+    .registrationContainer span {
+        font-size: 12px !important;
+    }
+    .input-group-text {
+        font-size: 12px !important;
+    }
+    .leftControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 300px !important;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .rightControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 300px !important;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .noPadding {
+        padding: 0px !important;
+    }
+    .inputControl {
+        text-align: left;
+        font-size: 12px !important;
+        /* max-width: 400px !important; */
+    }
+}
+
+@media (min-width: 601px) and (max-width:720px) {
+    .registrationContainer {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: 10px !important;
+    }
+    .registrationContainer span {
+        font-size: 10px !important;
+    }
+    .input-group-text {
+        font-size: 10px !important;
+    }
+    .leftControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 250px !important;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .rightControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 250px !important;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .noPadding {
+        padding: 0px !important;
+    }
+    .inputControl {
+        text-align: left;
+        font-size: 12px !important;
+        /* max-width: 400px !important; */
+    }
+}
+
+
+/*Extra small devices (phones, 600px and down) */
+
+@media (max-width: 600px) {
+    .registrationContainer {
+        padding-top: .5em !important;
+        padding-bottom: .5em !important;
+        padding-left: .5em !important;
+        padding-right: .5em !important;
+        /* width: 100%; */
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        font-size: 10px !important;
+    }
+    .registrationContainer span {
+        font-size: 10px !important;
+    }
+    .input-group-text {
+        font-size: 10px !important;
+    }
+    .leftControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        /* max-width: 250px !important; */
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .rightControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        /* max-width: 250px !important; */
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .noPadding {
+        padding: 0px !important;
+    }
+    .inputControl {
+        text-align: left;
+        font-size: 12px !important;
+        /* max-width: 400px !important; */
+    }
+}

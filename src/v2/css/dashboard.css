@@ -1,0 +1,12 @@
+
+body{
+    --primaryColor:  #01966B;
+}
+
+.MuiButtonBase-root :active{
+    background-color: var(--primaryColor)
+}
+
+.MuiPaper-root .MuiPaper-elevation{
+    background-color: var(--primaryColor)
+}

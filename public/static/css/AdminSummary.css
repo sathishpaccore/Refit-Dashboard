@@ -1,0 +1,38 @@
+
+.adminGrid{
+    text-align: left;
+}
+
+.adminGrid th{
+    text-align: center;
+    border-style: dotted;
+    border-width: 1px;
+    border-color: #dee2e6;
+}
+
+.adminGrid td{
+    text-align: left;
+    border-style: dotted;
+    border-width: 1px;    
+    border-color: #dee2e6;
+}
+
+@media only screen and (min-width: 1200px) and (max-width:1400px) {
+    .adminGrid td, th{
+        font-size: 14px !important;
+        }
+}
+
+
+@media only screen and (min-width: 720px) and (max-width:1199px) {
+    .adminGrid td, th{
+        font-size: 12px !important;
+        }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width:720px) {
+    .adminGrid td, th{
+        font-size: 10px !important;
+        }
+}

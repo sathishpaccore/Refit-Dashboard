@@ -1,0 +1,258 @@
+.registrationContainer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.leftControlGroup {
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 500px !important;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.rightControlGroup {
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 500px !important;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.noPadding {
+    padding: 0px !important;
+}
+
+.inputControl {
+    text-align: left;
+    /* max-width: 400px !important; */
+}
+
+.sideheader {
+    margin-bottom: .25rem !important;
+}
+
+.registrationContainer hr {
+    margin-top: .25rem !important;
+    margin-bottom: .25rem !important;
+}
+
+@media (min-width: 1400px) {
+    .registrationContainer {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .leftControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 500px !important;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .rightControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 500px !important;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .noPadding {
+        padding: 0px !important;
+    }
+    .inputControl {
+        text-align: left;
+        /* max-width: 400px !important; */
+    }
+}
+
+@media (min-width: 1200px) and (max-width:1400px) {
+    .registrationContainer {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: 14px !important;
+    }
+    .registrationContainer span {
+        font-size: 14px !important;
+    }
+    .registrationContainer input {
+        font-size: 14px !important;
+    }
+    .input-group-text {
+        font-size: 14px !important;
+    }
+    .leftControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 400px !important;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .rightControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 400px !important;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .noPadding {
+        padding: 0px !important;
+    }
+    .inputControl {
+        text-align: left;
+        font-size: 14px !important;
+        /* max-width: 400px !important; */
+    }
+}
+
+@media (min-width: 720px) and (max-width:1199px) {
+    .registrationContainer {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: 12px !important;
+    }
+    .registrationContainer span {
+        font-size: 12px !important;
+    }
+    .input-group-text {
+        font-size: 12px !important;
+    }
+    .leftControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 300px !important;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .rightControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 300px !important;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .noPadding {
+        padding: 0px !important;
+    }
+    .inputControl {
+        text-align: left;
+        font-size: 12px !important;
+        /* max-width: 400px !important; */
+    }
+}
+
+@media (min-width: 601px) and (max-width:720px) {
+    .registrationContainer {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: 10px !important;
+    }
+    .registrationContainer span {
+        font-size: 10px !important;
+    }
+    .input-group-text {
+        font-size: 10px !important;
+    }
+    .leftControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 250px !important;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .rightControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 250px !important;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .noPadding {
+        padding: 0px !important;
+    }
+    .inputControl {
+        text-align: left;
+        font-size: 12px !important;
+        /* max-width: 400px !important; */
+    }
+}
+
+
+/*Extra small devices (phones, 600px and down) */
+
+@media (max-width: 600px) {
+    .registrationContainer {
+        padding-top: .5em !important;
+        padding-bottom: .5em !important;
+        padding-left: .5em !important;
+        padding-right: .5em !important;
+        /* width: 100%; */
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        font-size: 10px !important;
+    }
+    .registrationContainer span {
+        font-size: 10px !important;
+    }
+    .input-group-text {
+        font-size: 10px !important;
+    }
+    .leftControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        /* max-width: 250px !important; */
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .rightControlGroup {
+        padding-left: 5px;
+        padding-right: 5px;
+        /* max-width: 250px !important; */
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .noPadding {
+        padding: 0px !important;
+    }
+    .inputControl {
+        text-align: left;
+        font-size: 12px !important;
+        /* max-width: 400px !important; */
+    }
+}

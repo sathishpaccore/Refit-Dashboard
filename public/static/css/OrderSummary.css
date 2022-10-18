@@ -1,0 +1,30 @@
+.leftTextContainer {
+    float: left;
+}
+
+.rightTextContainer {
+    float: left;
+}
+
+.leftText {
+    text-align: right;
+}
+
+.rightText {
+    text-align: left;
+}
+
+@media (max-width:601px) {
+    .leftTextContainer {
+        float: left;
+    }
+    .rightTextContainer {
+        float: left;
+    }
+    .leftText {
+        text-align: left;
+    }
+    .rightText {
+        text-align: left;
+    }
+}

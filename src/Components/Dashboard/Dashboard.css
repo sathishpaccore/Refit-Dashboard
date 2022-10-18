@@ -1,0 +1,231 @@
+.table-fixed tbody {
+    height: 300px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.hide-calendar .ui-datepicker-calendar {
+    display: none;
+}
+
+.hide-month .ui-datepicker-month {
+    display: none;
+}
+
+.hide-year .ui-datepicker-year {
+    display: none;
+}
+
+
+/* Style to hide Dates / Months */
+
+
+/* .ui-datepicker-calendar,.ui-datepicker-month { display: none; } */
+
+
+/* 
+.accordion .card-header:after {
+    font-family: 'FontAwesome';
+    content: "\f077";
+    float: right;
+}
+
+.accordion .card-header.collapsed:after {
+    
+    content: "\f078";
+} */
+
+.barChartContainer {
+    max-height: 500px;
+    height: auto;
+    /* margin-top: 15px;  */
+    padding: 5px;
+    padding-bottom: 32px;
+}
+
+.pieChartContainer {
+    max-height: 500px;
+    height: 440px;
+    padding: 5px;
+}
+
+.orderGridContainer {
+    height: 500px;
+    overflow: auto;
+}
+
+.pieChartCanvas {
+    text-align: center;
+    /* max-height: 300px !important;        */
+}
+
+@media only screen and (min-width: 1400px) {
+    .barChartContainer {
+        max-height: 500px;
+        height: auto;
+        /* margin-top: 15px;  */
+        padding: 5px;
+        padding-bottom: 32px;
+    }
+    .pieChartContainer {
+        max-height: 500px;
+        height: 440px;
+        /* margin-top: 15px;  */
+        padding: 5px;
+    }
+    .orderGridContainer {
+        height: 500px;
+        overflow: auto;
+    }
+    .pieChartCanvas {
+        text-align: center;
+        /* max-height: 500px !important;
+    height: 500px !important; */
+    }
+    .barChartCanvas {
+        max-height: 500px !important;
+        height: 500px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width:1400px) {
+    .barChartContainer {
+        max-height: 500px;
+        height: auto;
+        /* margin-top: 15px;  */
+        padding: 5px;
+        padding-bottom: 32px;
+    }
+    .pieChartContainer {
+        max-height: 500px;
+        height: 340px;
+        /* margin-top: 15px;  */
+        padding: 5px;
+    }
+    .orderGridContainer {
+        height: 500px;
+        overflow: auto;
+    }
+    .pieChartCanvas {
+        text-align: center;
+        /* max-height: 500px !important;
+        height: 500px !important; */
+    }
+    .barChartCanvas {
+        max-height: 500px !important;
+        height: 500px !important;
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width:1199px) {
+    .barChartContainer {
+        max-height: 500px;
+        height: auto;
+        /* margin-top: 15px;  */
+        padding: 5px;
+    }
+    .pieChartContainer {
+        max-height: 500px;
+        height: auto;
+        /* margin-top: 15px;  */
+        padding: 5px;
+    }
+    .orderGridContainer {
+        height: 500px;
+        overflow: auto;
+    }
+    .pieChartCanvas {
+        text-align: center;
+        /* max-height: 500px !important;
+        height: 420px !important; */
+    }
+}
+
+@media (min-width: 601px) and (max-width:720px) {
+    .barChartContainer {
+        max-height: 500px;
+        height: auto;
+        /* margin-top: 15px;  */
+        padding: 5px;
+    }
+    .pieChartContainer {
+        max-height: 500px;
+        height: auto;
+        /* margin-top: 15px;  */
+        padding: 5px;
+    }
+    .orderGridContainer {
+        height: 500px;
+        overflow: auto;
+    }
+    .pieChartCanvas {
+        text-align: center;
+        /* max-height: 500px !important;
+        height: 420px !important; */
+    }
+}
+
+@media (max-width: 600px) {
+    .barChartContainer {
+        max-height: 500px;
+        height: auto;
+        /* margin-top: 15px;  */
+        padding: 5px;
+    }
+    .pieChartContainer {
+        max-height: 500px;
+        height: auto;
+        /* margin-top: 15px;  */
+        padding: 5px;
+    }
+    .orderGridContainer {
+        height: 500px;
+        overflow: auto;
+    }
+    .pieChartCanvas {
+        text-align: center;
+        /* max-height: 500px !important;
+        height: 420px !important; */
+    }
+}
+
+@media (min-width: 601px) and (max-width:1024px) {
+    .chartWidth {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex-basis: 100% !important;
+    }
+}
+
+.paginationBttns {
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .paginationBttns a {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #2b2eff;
+    color: #2b2eff;
+    cursor: pointer;
+  }
+
+  
+.paginationBttns a:hover {
+color: white;
+background-color: #2b2eff;
+}
+  
+.paginationActive a {
+color: white;
+background-color: #2b2eff;
+}
+  
+.paginationDisabled a {
+color: white;
+background-color: grey;
+}
