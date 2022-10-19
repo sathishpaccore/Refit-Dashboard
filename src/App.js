@@ -62,7 +62,7 @@ const RoutesFunc = () => {
   Auth.setAuth(token === null ? false : true);
   return (
     <Routes>
-      <Route path="/" element={<Login setToken={setToken} />} />
+      <Route path="/" element={<DashboardLogin setToken={setToken} />} />
       {/* route add  by sathish */}
       <Route path="/orders" element={<Orders/>} />
       <Route path="/customers" element={<Customers/>} />
