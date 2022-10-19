@@ -102,8 +102,6 @@ const handleSubmit = async (e) => {
               className="img-fluid"
               style={{
                 marginTop: "-20px",
-                height: 50,
-                width: 100,
                 float: "left",
               }}
               alt=""
