@@ -6,30 +6,13 @@ import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MuiDrawer from "@mui/material/Drawer";
 import MuiAppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import List from "@mui/material/List";
-import CssBaseline from "@mui/material/CssBaseline";
+
 import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-// import MailIcon from '@mui/icons-material/Mail';
-import DashboardIcon from "@mui/icons-material/Dashboard";
-import SettingsIcon from "@mui/icons-material/Settings";
-import TextsmsTwoToneIcon from "@mui/icons-material/TextsmsTwoTone";
-import TopicIcon from "@mui/icons-material/Topic";
+
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import PeopleAltOutlinedIcon from "@mui/icons-material/PeopleAltOutlined";
-import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 import HeadphonesOutlinedIcon from "@mui/icons-material/HeadphonesOutlined";
-import Customers from "./Customers";
-import { Link } from "react-router-dom";
+
 
 // Sales Card
 import Card from "@mui/material/Card";
@@ -56,7 +39,7 @@ import DoughnutChart from "./DoughnutChart";
 import DropDown from "./DropDown";
 import { connect } from "react-redux";
 import auth_action from "../Redux/actions/authaction";
-import authService from "../services/authService";
+// import authService from "../services/authService";
 import SideNav from './SideNav';
 
 
@@ -196,7 +179,7 @@ const Drawer = styled(MuiDrawer, {
       <Main open={open}>
         <DrawerHeader />
         {/* Sales Card Design Start */}
-        <div className="" style={{ background: "#f0fcf7" }}>
+        <div className="mt-4" style={{ background: "#f0fcf7" }}>
           <Grid container spacing={1}>
             <Grid item xs={4}>
               <Box component="main" sx={{ flexGrow: 1, p: 3 }}>

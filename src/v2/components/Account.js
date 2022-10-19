@@ -1,16 +1,90 @@
-import * as React from "react";
-import Button from "@mui/material/Button";
-import SideNav from "./SideNav";
-import Box from '@mui/material/Box';
+import * as React from 'react';
+import { styled } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import Button from '@mui/material/Button';
+import SideNav from './SideNav';
+import Typography from "@mui/material/Typography";
 
-export default function Account() {
+
+
+// Side nav bar Start
+const drawerWidth = 240;
+
+const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
+  ({ theme, open }) => ({
+    flexGrow: 1,
+    // padding: theme.spacing(),
+    marginTop: -50,
+    transition: theme.transitions.create("margin", {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
+    marginLeft: `-${drawerWidth}px`,
+    ...(open && {
+      transition: theme.transitions.create("margin", {
+        easing: theme.transitions.easing.easeOut,
+        duration: theme.transitions.duration.enteringScreen,
+      }),
+      marginLeft: 0,
+    }),
+    ...(!open && {
+      transition: theme.transitions.create("margin", {
+        easing: theme.transitions.easing.easeOut,
+        duration: theme.transitions.duration.enteringScreen,
+      }),
+      marginLeft: 0,
+    }),
+  })
+);
+const openedMixin = (theme) => ({
+  width: drawerWidth,
+  transition: theme.transitions.create("width", {
+    easing: theme.transitions.easing.sharp,
+    duration: theme.transitions.duration.enteringScreen,
+  }),
+  overflowX: "hidden",
+});
+
+const closedMixin = (theme) => ({
+  transition: theme.transitions.create("width", {
+    easing: theme.transitions.easing.sharp,
+    duration: theme.transitions.duration.leavingScreen,
+  }),
+  overflowX: "hidden",
+  width: `calc(${theme.spacing(7)} + 1px)`,
+  [theme.breakpoints.up("sm")]: {
+    width: `calc(${theme.spacing(8)} + 1px)`,
+  },
+});
+
+const DrawerHeader = styled("div")(({ theme }) => ({
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "flex-end",
+  padding: theme.spacing(0, 1),
+  // necessary for content to be below app bar
+  ...theme.mixins.toolbar,
+}));
+
+
+// Side nav bar End
+
+ function Account() {
+
+  const [open, setOpen] = React.useState(false);
+
   return (
-    <Box>
-        {/* <SideNav /> */}
-        <div className="container" style={{ background: "#ffffff" }}>
+    <Box sx={{ display: "flex" }}>
+     <SideNav />
+    
+      <Main open={open}>
+        <DrawerHeader />
+        <Box component="main" style={{ background: "#ffffff" }} sx={{ flexGrow: 1, p: 3 }}>
+        <DrawerHeader />
+        <div className="container" >
       <div className="row">
         <div className="form-group col-lg-6 col-md-6 col-12">
-          <div className="row mt-4">
+          <div className="row">
             <div className="form-group col-lg-12 col-md-12 col-12">
               <h5 className="ml-2">Account Settings</h5>
             </div>
@@ -262,7 +336,22 @@ export default function Account() {
         </div>
       </div>
     </div>
-    </Box>
+
    
+      </Box>
+       
+       
+
+        
+    
+      </Main>
+
+    </Box>
   );
 }
+
+
+
+export default Account;
+
+

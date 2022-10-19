@@ -10,14 +10,12 @@ import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+
 
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import SettingsIcon from "@mui/icons-material/Settings";
@@ -30,6 +28,13 @@ import HeadphonesOutlinedIcon from "@mui/icons-material/HeadphonesOutlined";
 import Customers from "./Customers";
 import { Link } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
+
+import MenuItem from '@mui/material/MenuItem';
+import Menu from '@mui/material/Menu';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import Tooltip from '@mui/material/Tooltip';
+import Avatar from '@mui/material/Avatar';
+import HomeIcon from '@mui/icons-material/Home';
 
 const drawerWidth = 240;
 
@@ -110,14 +115,32 @@ export default function MiniDrawer() {
     setOpen(false);
   };
 
+  const [auth, setAuth] = React.useState(true);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  // const handleChange = (event) => {
+  //   setAuth(event.target.checked);
+  // };
+
+  const handleMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar
         position="fixed"
         open={open}
-        style={{ backgroundColor: "#01966B" }}
+        style={{ backgroundColor: "#FFFFFF" }}
       >
+
+
         <Toolbar>
           <IconButton
             color="inherit"
@@ -128,20 +151,70 @@ export default function MiniDrawer() {
               marginRight: 5,
               ...(open && { display: "none" }),
             }}
+            style={{ color: "#01966B" }}
           >
             <MenuIcon />
           </IconButton>
-          <div className="d-flex">
-            <Typography variant="h5" noWrap component="div">
-              {/* <img
-                src="static/new/images/Frame.png"
-                className="img-fluid"
-                alt="refitlogo"
-              /> */}
-            </Typography>
-          </div>
+          <Typography variant="h6" color="#000000" component="div" sx={{ flexGrow: 1 }}>
+            Dashboard
+          </Typography>
+          {auth && (
+            <div>
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+
+                color="inherit"
+              >
+                <NotificationsIcon style={{ color: "#01966B" }} />
+
+              </IconButton>
+              <IconButton>
+                <Typography color="#000000" component="p" sx={{ flexGrow: 1 }}>
+                  Arjun
+                </Typography>
+              </IconButton>
+
+              <Tooltip title="Open settings">
+                <IconButton onClick={handleMenu} sx={{ p: 0 }}>
+                  <Avatar alt="Remy Sharp" src="/static/images/2.jpg" />
+                </IconButton>
+              </Tooltip>
+
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorEl}
+                anchorOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+              >
+                <MenuItem> <Link to="/account" className="text-dark">My account</Link></MenuItem>
+                <MenuItem> <Link to="/orders" className="text-dark">Orders</Link></MenuItem>
+                <MenuItem> <Link to="/dashboard" className="text-dark">Dashboard</Link></MenuItem>
+                <MenuItem> <Link to="/dashboardlogin" className="text-dark">Logout</Link> </MenuItem>
+              </Menu>
+            </div>
+          )}
         </Toolbar>
+        <Divider />
+        <div className="bg-white text-muted">
+          <Link to="/dashboard" className="text-dark"> 
+           <HomeIcon  className="ml-4" style={{color: "#01966B"}} />
+           </Link>
+            <span className="mt-4">/ Dashboard</span>
+        </div>
       </AppBar>
+
       <Drawer variant="permanent" open={open}>
         <DrawerHeader style={{ background: "#01966B" }}>
           <Typography variant="h5" noWrap component="div">
@@ -157,7 +230,7 @@ export default function MiniDrawer() {
         </DrawerHeader>
         <Divider />
         <List>
-          {["Dashboard", "Orders", "Orders"].map((text, index) => (
+          {["Dashboard", "Orders"].map((text, index) => (
             <ListItem key={text} disablePadding sx={{ display: "block" }}>
               <ListItemButton
                 sx={{
@@ -173,10 +246,10 @@ export default function MiniDrawer() {
                     justifyContent: "center",
                   }}
                 >
-                  {index % 4 === 0 ? (
+                  {index % 2 === 0 ? (
                     <DashboardIcon />
                   ) : (
-                    <ShoppingBagOutlinedIcon /> 
+                    <ShoppingBagOutlinedIcon />
                   )}
                 </ListItemIcon>
                 <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
